@@ -1,22 +1,17 @@
-import logo from "./logo.svg";
 import "./App.css";
+import React from "react";
+// Importo il componente Clock
+import Clock from "./components/Clock";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello World</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <h1>My first react app</h1>
+      </div>
+      {/* Richiamo il componente Clock */}
+      <Clock country="Chile" timezone="-6" />
+    </>
   );
 }
 
